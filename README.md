@@ -1,2 +1,3 @@
-# base
-Template base
+# clock
+
+Example of clock
