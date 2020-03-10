@@ -22,4 +22,10 @@ body {
   color: $black-color;
   background-color: $light-color;
   font-family: 'Open Sans', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #091921;
 }
