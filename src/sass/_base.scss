@@ -49,6 +49,9 @@ body {
       border: none;
     }
   }
+  .slider:before {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
   .hour .hr:before {
     background: #ff105e;
   }

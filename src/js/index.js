@@ -28,6 +28,5 @@ switchTheme.addEventListener('change', e => {
     body.removeAttribute('data-theme');
   }
   light.classList.toggle('no-active');
-
   dark.classList.toggle('no-active');
 });
