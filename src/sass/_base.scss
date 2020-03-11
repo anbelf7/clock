@@ -7,8 +7,9 @@ $white-color: #ffffff;
 $black-color: #282828;
 $success-color: #2ecc71;
 $error-color: #e74c3c;
-$bg-dark-color: #091921;
-$bg-light-color: #247197;
+
+$dark-bg-color: #091921;
+$light-bg-color: #247197;
 
 *,
 *::before,
@@ -32,9 +33,29 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: $bg-dark-color;
+  background: $light-bg-color;
 }
 
-.light {
-  background: $bg-light-color;
+[data-theme='dark'] {
+  background-color: $dark-bg-color;
+  .clock {
+    background-color: transparent;
+    border: 8px solid #091921;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+      inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+      0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
+    &:before {
+      background: $white-color;
+      border: none;
+    }
+  }
+  .hour .hr:before {
+    background: #ff105e;
+  }
+  .min .mn:before {
+    background: $light-color;
+  }
+  .sec .sc:before {
+    background: $light-bg-color;
+  }
 }

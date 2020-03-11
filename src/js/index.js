@@ -16,29 +16,18 @@ setInterval(() => {
   sc.style.transform = `rotateZ(${ss}deg)`;
 });
 
-const slider = document.querySelector('.slider');
+const switchTheme = document.querySelector('.switch input[type="checkbox"]');
 const dark = document.querySelector('.fa-moon');
 const light = document.querySelector('.fa-sun');
 const body = document.querySelector('body');
-const clock = document.querySelector('.clock');
-const clockChild = Array.from(clock.children);
 
-slider.addEventListener('click', () => {
-  theme();
-});
-dark.addEventListener('click', () => {
-  theme();
-});
-light.addEventListener('click', () => {
-  theme();
-});
-
-const theme = () => {
+switchTheme.addEventListener('change', e => {
+  if (e.target.checked) {
+    body.setAttribute('data-theme', 'dark');
+  } else {
+    body.removeAttribute('data-theme');
+  }
   light.classList.toggle('no-active');
+
   dark.classList.toggle('no-active');
-  body.classList.toggle('light');
-  clock.classList.toggle('oro-light');
-  clockChild.forEach(element => {
-    element.classList.toggle('lan-light');
-  });
-};
+});
