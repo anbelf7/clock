@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/solid.min.css');
 
 $light-color: #f9fafb;
 $white-color: #ffffff;
 $black-color: #282828;
 $success-color: #2ecc71;
 $error-color: #e74c3c;
+$bg-dark-color: #091921;
+$bg-light-color: #247197;
 
 *,
 *::before,
@@ -24,8 +28,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #091921;
+  background: $bg-dark-color;
+}
+
+.light {
+  background: $bg-light-color;
 }

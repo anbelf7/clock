@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clock</title>
   </head>
-  <body>
-    <div class="clock">
-      <div class="hour">
-        <div class="hr" id="hr"></div>
+  <body class="light">
+    <div class="clock oro-light">
+      <div class="hour lan-light">
+        <div class="hr " id="hr"></div>
       </div>
-      <div class="min">
-        <div class="mn" id="mn"></div>
+      <div class="min lan-light">
+        <div class="mn " id="mn"></div>
       </div>
-      <div class="sec">
+      <div class="sec lan-light">
         <div class="sc" id="sc"></div>
       </div>
     </div>
+    <!-- <div class="switch">
+      <input type="checkbox" name="switch" id="switch" class="switch" />
+      <label for="switch"></label>
+    </div> -->
+    <label class="switch">
+      <i class="fas fa-sun "></i>
+      <input type="checkbox" />
+      <span class="slider round"></span>
+      <i class="fas fa-moon no-active"></i>
+    </label>
     <script src="js/index.js"></script>
   </body>
 </html>
